@@ -1,0 +1,201 @@
+{
+	"easycom": {
+		"custom": {
+		  "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue",
+		  "^(?!z-paging-refresh|z-paging-load-more)z-paging(.*)": "z-paging/components/z-paging$1/z-paging$1.vue"
+		}
+	  },	
+    "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        {
+            "path": "pages/order/list",
+            "style": {
+                "navigationBarTitleText": "美优到家"
+            }
+        },
+        {
+            "path": "pages/order/detail",
+            "style": {
+                "navigationBarTitleText": "订单详情",
+				"enablePullDownRefresh": true
+            }
+
+        },
+        {
+            "path": "pages/rostering/rostering",
+            "style": {
+                "navigationBarTitleText": "美优到家"
+            }
+
+        },
+        {
+            "path": "pages/login/login",
+            "style": {
+                "navigationBarTitleText": "登录"
+            }
+
+        },
+        {
+            "path": "pages/login/bind-mobile-phone",
+            "style": {
+                "navigationBarTitleText": "绑定手机号"
+            }
+
+        },
+        {
+            "path": "pages/user/user",
+            "style": {
+                "navigationBarTitleText": "美优到家"
+            }
+
+        }, {
+            "path": "pages/user/user-earnings",
+            "style": {
+                "navigationBarTitleText": "收益页面"
+            }
+
+        }, {
+            "path": "pages/user/user-recharge",
+            "style": {
+                "navigationBarTitleText": "充值页面"
+            }
+
+        },
+        {
+            "path": "pages/user/user-withdrawal",
+            "style": {
+                "navigationBarTitleText": "提现页面"
+            }
+        },
+        {
+            "path": "pages/user/user-projects",
+            "style": {
+                "navigationBarTitleText": "我的项目"
+            }
+        },
+        {
+            "path": "pages/user/set",
+            "style": {
+                "navigationBarTitleText": "设置"
+            }
+
+        }, {
+            "path": "pages/user/user-audit",
+            "style": {
+                "navigationBarTitleText": "技师招募"
+            }
+
+        }
+        ,{
+            "path" : "pages/order/police",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "一键报警"
+            }
+            
+        }
+        ,{
+            "path" : "pages/order/police-success",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "报警成功"
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/user-audit-success",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "审核结果"
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/user-share",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "邀请分享"
+            }
+            
+        }
+        ,{
+            "path" : "pages/order/order-evaluate",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "订单评价"
+            }
+            
+        }
+        ,{
+            "path" : "pages/login/login-transition",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "微信登录"
+            }
+            
+        }
+        ,{
+            "path" : "pages/order/order-photo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "开始服务"
+            }
+            
+        }
+        ,{
+            "path" : "pages/order/order-paySuccess",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "支付成功"
+            }
+            
+        }
+        ,{
+            "path" : "pages/rostering/webView",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": ""
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/serviceTime/serviceTime",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "服务时间",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+    "tabBar": {
+        "backgroundColor": "#FFFFFF",
+        "color": "#333333",
+        "selectedColor": "#FD780F",
+        "borderStyle": "#ECECEC",
+        "list": [{
+                "text": "订单",
+                "pagePath": "pages/order/list",
+                "iconPath": "static/tab/order.png",
+                "selectedIconPath": "static/tab/order-hover.png"
+            },
+            {
+                "text": "排班",
+                "pagePath": "pages/rostering/rostering",
+                "iconPath": "static/tab/rostering.png",
+                "selectedIconPath": "static/tab/rostering-hover.png"
+            },
+            {
+                "text": "我的",
+                "pagePath": "pages/user/user",
+                "iconPath": "static/tab/user.png",
+                "selectedIconPath": "static/tab/user-hover.png"
+            }
+        ]
+    },
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "美优到家",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8"
+    }
+}

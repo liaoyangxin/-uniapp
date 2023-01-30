@@ -1,0 +1,251 @@
+{
+    "easycom": {
+        "custom": {
+            "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue",
+            "^(?!z-paging-refresh|z-paging-load-more)z-paging(.*)": "z-paging/components/z-paging$1/z-paging$1.vue"
+        }
+    },
+    "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages  path后面路径不跟.vue 否则报错
+        {
+            "path": "pages/index/index",
+            "style": {
+                "navigationBarTitleText": "美优到家"
+                    // "disableScroll": true
+            }
+        }, {
+            "path": "pages/order/list",
+            "style": {
+                "navigationStyle": "custom"
+            }
+
+        }, {
+            "path": "pages/product/detail",
+            "style": {
+                "navigationBarTitleText": "项目详情",
+                "enablePullDownRefresh": true
+                    // "disableScroll": true
+            }
+
+        }, {
+            "path": "pages/technician/list",
+            "style": {
+                "navigationStyle": "custom",
+                "disableScroll": true
+            }
+
+        }, {
+            "path": "pages/technician/authentication",
+            "style": {
+                "navigationBarTitleText": "技师认证"
+            }
+
+        },
+        {
+            "path": "pages/technician/lifeImgs",
+            "style": {
+                "navigationBarTitleText": "生活照片"
+            }
+
+        },
+        {
+
+            "path": "pages/user/totalAssets",
+            "style": {
+                "navigationBarTitleText": "美优到家"
+            }
+
+        },
+        {
+
+            "path": "pages/user/user",
+            "style": {
+                "navigationBarTitleText": "美优到家"
+            }
+
+        },
+        {
+            "path": "pages/index/webView",
+            "style": {
+                "navigationBarTitleText": "美优到家"
+            }
+        },
+        {
+            "path": "pages/order/detail",
+            "style": {
+                "navigationBarTitleText": "订单详情",
+                "enablePullDownRefresh": true
+
+            }
+
+        },
+        {
+            "path": "pages/user/user-recharge",
+            "style": {
+                "navigationBarTitleText": "充值页面"
+            }
+
+        },
+        {
+            "path": "pages/login/login",
+            "style": {
+                "navigationBarTitleText": "美优到家"
+            }
+
+        },
+        {
+            "path": "pages/order/evaluate",
+            "style": {
+                "navigationBarTitleText": "评价"
+            }
+
+        },
+        {
+            "path": "pages/order/submit-order",
+            "style": {
+                "navigationBarTitleText": "确认订单"
+            }
+
+        },
+        {
+            "path": "pages/order/pay-success",
+            "style": {
+                "navigationBarTitleText": "支付成功"
+            }
+        },
+        {
+            "path": "pages/order/pay-failed",
+            "style": {
+                "navigationBarTitleText": "支付失败"
+            }
+        },
+        {
+            "path": "pages/user/user-addressList",
+            "style": {
+                "navigationBarTitleText": "地址列表"
+            }
+
+        },
+        {
+            "path": "pages/user/user-addresDetail",
+            "style": {
+                "navigationBarTitleText": "地址详情"
+            }
+
+        },
+        {
+            "path": "pages/user/user-share",
+            "style": {
+                "navigationBarTitleText": "分享"
+            }
+
+        },
+        {
+            "path": "pages/order/coupon",
+            "style": {
+                "navigationBarTitleText": "优惠券"
+                    // "navigationStyle": "custom"
+            }
+        },
+        {
+            "path": "pages/order/coupon-projects",
+            "style": {
+                "navigationBarTitleText": "美优到家"
+            }
+
+        },
+        {
+            "path": "pages/user/user-follow",
+            "style": {
+                "navigationBarTitleText": "关注"
+            }
+
+        },
+        {
+            "path": "pages/user/user-withdrawal",
+            "style": {
+                "navigationBarTitleText": "提现页面"
+            }
+        },
+        {
+            "path": "pages/user/set",
+            "style": {
+                "navigationBarTitleText": "设置"
+            }
+
+        },
+        {
+            "path": "pages/login/bind-mobile-phone",
+            "style": {
+                "navigationBarTitleText": "绑定手机号"
+            }
+        },
+        {
+            "path": "pages/login/login-transition",
+            "style": {
+                "navigationBarTitleText": "微信登录"
+            }
+
+        }, {
+            "path": "pages/user/exchange/exchange",
+            "style": {
+                "navigationBarTitleText": "券码兑换",
+                "enablePullDownRefresh": false
+            }
+
+        }, {
+            "path": "pages/user/exchange/success",
+            "style": {
+                "navigationBarTitleText": "兑换成功",
+                "enablePullDownRefresh": false
+            }
+
+        }
+    ],
+    "tabBar": {
+        "backgroundColor": "#FFFFFF",
+        "color": "#333333",
+        "selectedColor": "#FD780F",
+        "borderStyle": "#ECECEC",
+        "list": [{
+                "text": "首页",
+                "pagePath": "pages/index/index",
+                "iconPath": "static/tab/index.png",
+                "selectedIconPath": "static/tab/index-hover.png"
+            },
+            {
+                "text": "技师",
+                "pagePath": "pages/technician/list",
+                "iconPath": "static/tab/technician.png",
+                "selectedIconPath": "static/tab/technician-hover.png"
+            },
+            {
+                "text": "订单",
+                "pagePath": "pages/order/list",
+                "iconPath": "static/tab/order.png",
+                "selectedIconPath": "static/tab/order-hover.png"
+            },
+            {
+                "text": "我的",
+                "pagePath": "pages/user/user",
+                "iconPath": "static/tab/user.png",
+                "selectedIconPath": "static/tab/user-hover.png"
+            }
+        ]
+    },
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "美优到家",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "backgroundColor": "#FFFFFF"
+            // "disableScroll": true //页面不能下拉
+    },
+    "condition": { //模式配置，仅开发期间生效
+        "current": 0, //当前激活的模式(list 的索引项)
+        "list": [{
+            "name": "", //模式名称
+            "path": "", //启动页面，必选
+            "query": "" //启动参数，在页面的onLoad函数里面得到
+        }]
+    }
+
+}
